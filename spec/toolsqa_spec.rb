@@ -40,6 +40,11 @@ describe "Auto_Testing practice form"  do
 		@session.find_by_id("profession-1").click
 	end
 
+	it "should upload a photo" do
+		
+		@session.attach_file('photo', '/Users/tech-a10/Desktop/google-img.png')
+	end
+
 	it "should click an option for automation tool" do
 		@session.find_by_id("tool-2").click
 
