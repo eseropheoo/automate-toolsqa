@@ -48,14 +48,14 @@ describe "Auto_Testing practice form"  do
 	it "should search through the scroll bar and select a continent" do
 		@session.find_by_id("continents").click
 		@session.find(:select, 'continents').first(:option, 'Africa').select_option
-		sleep 3
+		
 
 	end
 
 	it "should search through selenium commands" do
 		@session.find_by_id('selenium_commands').click
 		@session.find(:select, 'selenium_commands').first(:option, 'Wait Commands').select_option
-		sleep 3
+
 	end
 
 	it "should click the submit button" do
