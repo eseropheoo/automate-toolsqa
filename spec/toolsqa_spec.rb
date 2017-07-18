@@ -67,6 +67,8 @@ describe "Auto_Testing practice form"  do
 		@session.find_by_id('submit').click
 	end
 
+	
+
 end
 	
 
